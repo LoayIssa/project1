@@ -1,6 +1,5 @@
 .contaner{
-background-color: red;
-height: 100%;
+
 }
 
 
@@ -14,7 +13,9 @@ height: 100%;
 
 
 
-
+.buton{
+  margin: 200px 0 0px 600px;
+}
 
 
 
@@ -24,19 +25,29 @@ height: 100%;
   display: grid;  
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
-
+  margin: 20px 324px 0 500px;
+  background-color: burlywood;
 }
 
  .paerant > div 
 {
-    border-top : 1px solid black;
-    border-left : 1px solid black;
+    border-top : 3px solid black;
+    border-left : 3px solid black;
 
 }
+.paerant .ch1 , .paerant .ch4 , .paerant .ch7 {
+ border-left: none;
+}
+.paerant .ch1 , .paerant .ch2 , .paerant .ch3 {
+  border-top: none;
+ }
+
+
+
 .paerant > div button {
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color:blue;
   border: none;
   cursor: pointer;
 }
