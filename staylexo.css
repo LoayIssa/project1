@@ -20,16 +20,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .buton{
   margin-top: 30px;
   text-align: center;
@@ -96,5 +86,185 @@
     margin: 0;
     padding: 0;
 }
+
+
+/* media taplet screen  */
+@media screen and (max-width:768px){
+
+  .All{
+    border: 3px solid #006400;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .All h1 {
+    color:#006400;
+    font-size: 25px;
+  }
+  
+  .All h1 span {
+    color:#8FBC8F;
+    font-size: 25px;
+  }
+  
+  
+  .buton{
+    margin: auto;
+  }
+  
+  .buton button{
+    font-size: 20px;
+    width: 200px;
+    background: none;
+    border-radius: 40px 10px;
+    cursor: pointer;
+  
+  }
+  
+  .buton p {
+    font-size: 18px;
+    color:black;
+    display: inline;
+    padding: 0 20px 0 10px;  
+  }
+  .buton p span {
+    text-transform: uppercase;
+    color:#006400;
+  
+  }
+  
+  
+  .paerant 
+  {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    margin-left: 200px;
+  }
+  
+   .paerant > div 
+  {
+      border-top : 3px solid #F8F8FF;
+      border-left : 3px solid #F8F8FF;
+  
+  }
+  .paerant .ch1 , .paerant .ch4 , .paerant .ch7 {
+   border-left: none;
+  }
+  .paerant .ch1 , .paerant .ch2 , .paerant .ch3 {
+    border-top: none;
+   }
+  
+  
+  
+  .paerant > div button {
+    width: 100%;
+    height: 100%;
+    background-color:#8FBC8F;
+    border: none;
+    cursor: pointer;
+  }
+  .paerant > div p {
+    text-align: center;
+      color:#006400;
+      font-size: 70px;
+      margin: 0;
+      padding: 0;
+  }
+
+
+
+}
+
+
+
+/* media mopaile screen  */
+
+@media screen and (max-width:400px){
+
+  .All{
+    border: 3px solid black;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .All h1 {
+    color:black;
+    font-size: 25px;
+  }
+  
+  .All h1 span {
+    color:#00CED1;
+    font-size: 25px;
+  }
+  
+  
+  .buton{
+    margin: auto;
+  }
+  
+  .buton button{
+    font-size: 20px;
+    width: 200px;
+    background: none;
+    border-radius: 40px 10px;
+    cursor: pointer;
+  
+  }
+  
+  .buton p {
+    font-size: 15px;
+    color:black;
+    display: inline;
+    padding: 0 20px 0 10px;  
+  }
+  .buton p span {
+    text-transform: uppercase;
+    color:#00FFFF;
+  
+  }
+  
+  
+  .paerant 
+  {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows:  110px 110px 110px;
+    margin: 20px 30px 50px 40px;
+  }
+  
+   .paerant > div 
+  {
+      border-top : 3px solid #F8F8FF;
+      border-left : 3px solid #F8F8FF;
+  
+  }
+  .paerant .ch1 , .paerant .ch4 , .paerant .ch7 {
+   border-left: none;
+  }
+  .paerant .ch1 , .paerant .ch2 , .paerant .ch3 {
+    border-top: none;
+   }
+  
+  
+  
+  .paerant > div button {
+    width: 100%;
+    height: 100%;
+    background-color:#00FFFF;
+    border: none;
+    cursor: pointer;
+  }
+  .paerant > div p {
+    text-align: center;
+      color:black;
+      font-size: 70px;
+      margin: 0;
+      padding: 0;
+  }
+
+
+
+}
+
 
 
