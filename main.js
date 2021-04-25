@@ -16,11 +16,14 @@ const squareOne = ()=>{
 
     const addX = document.querySelector("#prch1");
     addX.innerHTML = "o"
+    document.getElementById("nextOne").innerHTML = " X "
     index1="o"
    }
     if(x%2 !== 0){
    const addO = document.querySelector("#prch1") 
    addO.innerHTML = "x"
+   document.getElementById("nextOne").innerHTML = " o "
+
    index1="x"
 
 
@@ -38,12 +41,15 @@ const squareTwo = ()=>{
 
     const addX = document.querySelector("#prch2");
     addX.innerHTML = "o"
+    document.getElementById("nextOne").innerHTML = " X "
     index2="o"
 
    }
     if(x%2 !== 0){
    const addO = document.querySelector("#prch2") 
    addO.innerHTML = "x"
+   document.getElementById("nextOne").innerHTML = " o "
+
    index2="x"
 
    }
@@ -61,12 +67,15 @@ const squareThree = ()=>{
 
     const addX = document.querySelector("#prch3");
     addX.innerHTML = "o"
+    document.getElementById("nextOne").innerHTML = " X "
     index3="o"
 
    }
     if(x%2 !== 0){
    const addO = document.querySelector("#prch3") 
    addO.innerHTML = "x"
+   document.getElementById("nextOne").innerHTML = " o "
+
    index3="x"
 
    }
@@ -84,12 +93,15 @@ const squareFour = ()=>{
 
     const addX = document.querySelector("#prch4");
     addX.innerHTML = "o"
+    document.getElementById("nextOne").innerHTML = " X "
     index4="o"
 
    }
     if(x%2 !== 0){
    const addO = document.querySelector("#prch4") 
    addO.innerHTML = "x"
+   document.getElementById("nextOne").innerHTML = " o "
+
    index4="x"
    }
    const d =document.querySelector(".buxch4")
@@ -103,14 +115,15 @@ const squareFour = ()=>{
 const squareFive = ()=>{
 
    if(x%2 === 0){
-
     const addX = document.querySelector("#prch5");
     addX.innerHTML = "o"
+    document.getElementById("nextOne").innerHTML = " X "
     index5="o"
    }
     if(x%2 !== 0){
    const addO = document.querySelector("#prch5") 
    addO.innerHTML = "x"
+   document.getElementById("nextOne").innerHTML = " o "
    index5="x"
 
    }
@@ -129,12 +142,15 @@ const squareSix = ()=>{
 
     const addX = document.querySelector("#prch6");
     addX.innerHTML = "o"
+    document.getElementById("nextOne").innerHTML = " X "
     index6="o"
 
    }
     if(x%2 !== 0){
    const addO = document.querySelector("#prch6") 
    addO.innerHTML = "x"
+   document.getElementById("nextOne").innerHTML = " o "
+
    index6="x"
 
    }
@@ -153,12 +169,15 @@ const squareSeven = ()=>{
 
     const addX = document.querySelector("#prch7");
     addX.innerHTML = "o"
+    document.getElementById("nextOne").innerHTML = " X "
     index7="o"
 
    }
     if(x%2 !== 0){
    const addO = document.querySelector("#prch7") 
    addO.innerHTML = "x"
+   document.getElementById("nextOne").innerHTML = " o "
+
    index7="x"
 
    }
@@ -177,12 +196,15 @@ const squareEight = ()=>{
 
     const addX = document.querySelector("#prch8");
     addX.innerHTML = "o"
+    document.getElementById("nextOne").innerHTML = " X "
     index8="o"
 
    }
     if(x%2 !== 0){
    const addO = document.querySelector("#prch8") 
    addO.innerHTML = "x"
+   document.getElementById("nextOne").innerHTML = " o "
+
    index8="x"
 
    }
@@ -201,12 +223,15 @@ const squareNine = ()=>{
 
     const addX = document.querySelector("#prch9");
     addX.innerHTML = "o"
+    document.getElementById("nextOne").innerHTML = " X "
     index9="o"
 
    }
     if(x%2 !== 0){
    const addO = document.querySelector("#prch9") 
    addO.innerHTML = "x"
+   document.getElementById("nextOne").innerHTML = " o "
+
    index9="x"
 
    }
@@ -221,6 +246,7 @@ const chek = () => {
       document.getElementById("prch1").style.color="red";
       document.getElementById("prch2").style.color="red";
       document.getElementById("prch3").style.color="red";
+      
       winnerX();
 
 
@@ -323,21 +349,21 @@ const chek = () => {
 
 
 const winnerX =()=>{
-   document.getElementById("result").innerHTML = "winner x "
+   document.getElementById("result").innerHTML = " X "
    setTimeout(function(){
 
       location.reload()
-    }, 5000);
+    }, 1000);
 
 }
 
 const winnerO =()=>{
-   document.getElementById("result").innerHTML = "winner o "
+   document.getElementById("result").innerHTML = " O "
 
    setTimeout(function(){
 
       location.reload()
-    }, 5000);
+    }, 1000);
 
 }
 
