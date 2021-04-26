@@ -1,5 +1,7 @@
 
 let x = 0; 
+let y = 0;
+/* creat 9 index for every squer */
 let index1=""
 let index2=""
 let index3=""
@@ -9,6 +11,9 @@ let index6=""
 let index7=""
 let index8=""
 let index9=""
+
+/* creat function to add X or O every square */
+
 
 const squareOne = ()=>{
 
@@ -187,7 +192,6 @@ const squareSeven = ()=>{
 
    ++x;
 
-
 }
 
 const squareEight = ()=>{
@@ -241,16 +245,18 @@ const squareNine = ()=>{
    ++x;
 }
 
+/* cryate function chek when anyone wins finsh game  */
+
+
 const chek = () => {
    if (index1=== "x" && index2==="x" && index3==="x"){
       document.getElementById("prch1").style.color="red";
       document.getElementById("prch2").style.color="red";
       document.getElementById("prch3").style.color="red";
-      
       winnerX();
-
-
+      
    }
+
    if (index1=== "o" && index2==="o" && index3==="o"){
       document.getElementById("prch1").style.color="red";
       document.getElementById("prch2").style.color="red";
@@ -345,8 +351,11 @@ const chek = () => {
       document.getElementById("prch7").style.color="red";
       winnerO();
    }
+      
 }
 
+
+/* function wineer x It will become red */
 
 const winnerX =()=>{
    document.getElementById("result").innerHTML = " X "
@@ -356,6 +365,7 @@ const winnerX =()=>{
     }, 1000);
 
 }
+/* function wineer o It will become red */
 
 const winnerO =()=>{
    document.getElementById("result").innerHTML = " O "
